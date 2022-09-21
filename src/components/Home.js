@@ -33,14 +33,19 @@ class Home extends React.Component {
   };
 
   /**
-   * 함수와 비슷하게 생겼지만 메소드라고 부른다.
-   * @param {*} event
+   *
+   * 텍스트 입력 값을 state에 저장하는 메소드
    */
   onChangeText = (event) => {
     this.setState({
       inputText: event.target.value,
     });
   };
+
+  /**
+   * 버튼 클릭 시 firebase에 입력 값을 전달하는 메소드
+   *
+   */
 
   onSubmitForm = async (event) => {
     /**
